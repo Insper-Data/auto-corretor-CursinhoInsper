@@ -192,3 +192,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Tudo dentro da pasta utils menos o arquivo info.txt
+utils/*
+!utils/info.txt

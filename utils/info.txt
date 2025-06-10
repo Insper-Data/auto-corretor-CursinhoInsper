@@ -1,0 +1,7 @@
+Aqui você deverá fazer o input das 3 planilhas:
+
+1. 'planilha_final.xlsx'
+2. 'socioeconomica.xlsx'
+3. 'resultados.csv'
+
+Esses arquivos não deverão ser commitados (estão no gitignore) por segurança da informação dos candidatos
