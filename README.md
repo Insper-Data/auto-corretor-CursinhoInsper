@@ -1,3 +1,87 @@
+# Corretor Automático de Gabaritos - Cursinho Insper
+
+
+Este projeto realiza a **correção automática de gabaritos** utilizando **visão computacional com OpenCV**. 
+O sistema lê folhas escaneadas em PDF, detecta as respostas marcadas, e salva um CSV com todas as respostas dos alunos.
+
+---
+## Como usar?:
+
+### Input:
+- **PDFs escaneados**: Coloque os PDFs escaneados na pasta `imagens_pdf/`. O primeiro PDF deve ser o gabarito, e os demais são os PDFs dos alunos.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Insper-Data/auto-corretor-CursinhoInsper.git
+cd seu-repo
+```
+
+### 2. Crie o ambiente virtual
+
+```bash
+python -m venv .venv
+```
+
+#### No windows
+
+```bash
+.venv\Scripts\activate
+```
+
+#### No macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Instale as dependências
+```bash
+pip install -r requirements.txt
+```
+
+
+## Como usar?
+
+### 1. Coloque os arquivos PDF escaneados na pasta imagens_pdf
+    - Primeiro PDF: gabarito.
+    - Os demais são os PDFs dos alunos
+
+### 2. Execute o script principal:
+
+```bash
+python corretor.py
+```
+
+### 3. O programa irá:
+- O programa irá:
+
+- Converter os PDFs em imagens.
+
+- Recortar automaticamente o bloco de questões.
+
+- Detectar as respostas preenchidas.
+
+- Salvar o arquivo respostas.csv, com o gabarito na primeira linha e as respostas dos alunos abaixo
+
+
+⚠️ Sobre detecções incompletas
+Caso alguma questão não tenha 5 bolinhas detectadas, o programa irá mostrar um aviso no terminal, como:
+```less
+⚠️ Questao 39: detectou 4 bolinhas (esperado: 5)
+```
+
+Esses casos podem acontecer por:
+
+Impressão desalinhada ou distorcida.
+
+Bolinhas muito preenchidas ou pouco nítidas.
+
+**Ausência de âncoras** nas folhas de gabarito, o que dificultou a padronização da correção automática.
+
+
+
+
 # Processamento e Análise de Provas do Cursinho Insper
 
 ## 📥 Inputs Necessários
