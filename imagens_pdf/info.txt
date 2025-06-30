@@ -1,0 +1,4 @@
+Aqui você deverá fazer o input dos gabaritos escaneados
+
+
+Esses arquivos não deverão ser commitados (estão no gitignore) por segurança da informação dos candidatos
