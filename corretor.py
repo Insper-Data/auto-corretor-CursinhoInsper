@@ -60,7 +60,7 @@ def detectar_respostas(temp_folder):
 
         if len(bolinhas) != 5:
             print(f"⚠️ Questão {i}: detectou {len(bolinhas)} bolinhas (esperado: 5)")
-            respostas.append("")
+            respostas.append("Z")
             continue
 
         # Ordenar da esquerda pra direita

@@ -1,5 +1,3 @@
-pandas
-openpyxl
 pyarrow
 seaborn
 matplotlib

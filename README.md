@@ -86,7 +86,7 @@ python corretor.py
 ```
 
 ### 3. O programa irá:
-- O programa irá:
+O programa irá:
 
 - Converter os PDFs em imagens.
 
