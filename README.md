@@ -19,7 +19,7 @@ cd seu-repo
 
 ### 2. Crie o ambiente virtual
 
-```bash
+```bash 
 python -m venv .venv
 ```
 
@@ -39,6 +39,38 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+### 4. Instale o Poppler (requisito para ler PDFs)
+
+O Poppler é necessário para que o script consiga converter PDFs em imagens.
+
+#### Passos:
+
+1. **Baixe o Poppler para Windows:**
+
+   👉 [https://github.com/oschwartz10612/poppler-windows/releases/](https://github.com/oschwartz10612/poppler-windows/releases/)
+
+   Baixe a versão mais recente do arquivo `.zip`.
+
+2. **Extraia a pasta:**  
+   Por exemplo, extraia para:  
+    `C:\poppler`
+3. **Adicione o Poppler ao PATH:**
+
+- Abra o menu Iniciar e pesquise por **“variáveis de ambiente”**.
+- Clique em **“Editar variáveis de ambiente do sistema”**.
+- Na seção **“Variáveis do sistema”**, encontre a variável `Path` e clique em **Editar...**.
+- Clique em **Novo** e adicione o caminho:
+  ```
+  C:\poppler\Library\bin
+  ```
+- Confirme clicando em **OK** em todas as janelas.
+
+4. **Teste no terminal:**  
+Abra o terminal (cmd ou PowerShell) e digite:
+```bash
+pdfinfo
+``` 
 
 
 ## Como usar?
