@@ -55,6 +55,7 @@ O Poppler é necessário para que o script consiga converter PDFs em imagens.
 2. **Extraia a pasta:**  
    Por exemplo, extraia para:  
     `C:\poppler`
+
 3. **Adicione o Poppler ao PATH:**
 
 - Abra o menu Iniciar e pesquise por **“variáveis de ambiente”**.
@@ -66,11 +67,10 @@ O Poppler é necessário para que o script consiga converter PDFs em imagens.
   ```
 - Confirme clicando em **OK** em todas as janelas.
 
-4. **Teste no terminal:**  
-Abra o terminal (cmd ou PowerShell) e digite:
-```bash
-pdfinfo
-``` 
+4. **Teste no terminal:**  Abra o terminal (cmd ou PowerShell) e digite:
+  ```bash
+  pdfinfo
+  ``` 
 
 
 ## Como usar?
@@ -105,16 +105,13 @@ Caso alguma questão não tenha 5 bolinhas detectadas, o programa irá mostrar u
 
 Esses casos podem acontecer por:
 
-Impressão desalinhada ou distorcida.
+- Impressão desalinhada ou distorcida.
 
-Bolinhas muito preenchidas ou pouco nítidas.
+- Bolinhas muito preenchidas ou pouco nítidas.
 
-**Ausência de âncoras** nas folhas de gabarito, o que dificultou a padronização da correção automática.
+- **Ausência de âncoras** nas folhas de gabarito, o que dificultou a padronização da correção automática.
 
-
-
-
-# Processamento e Análise de Provas do Cursinho Insper
+# Análise de Resultados
 
 ## 📥 Inputs Necessários
 
