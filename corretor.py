@@ -8,7 +8,7 @@ import csv
 entrada_pdf = "imagens_pdf"
 saida_img = "imagens_gabaritos"
 temp_dir = "temp"
-csv_saida = "respostas.csv"
+csv_saida = "utils/respostas.csv"
 
 os.makedirs(saida_img, exist_ok=True)
 os.makedirs(temp_dir, exist_ok=True)
